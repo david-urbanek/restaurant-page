@@ -111,6 +111,7 @@ img {
 #main-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 32px;
   align-items: center;
   justify-items: center;
 }
@@ -118,7 +119,7 @@ img {
 #menu-container {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
   text-align: center;
 }
@@ -138,10 +139,16 @@ img {
   margin-top: 10%;
 }
 
+#about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
 /* From Uiverse.io by Awadhesh684827 */
 button {
   display: inline-block;
-  border: 1px solid rgb(0, 0, 0);
+  border: 4px inset rgb(246, 179, 23);
   color: rgb(0, 0, 0);
   padding: 10px 13px;
   min-width: 150px;
